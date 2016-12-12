@@ -1,6 +1,7 @@
 package com.pivotal.willchen;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +10,10 @@ import org.springframework.stereotype.Component;
  */
 @RefreshScope
 @Component
+@EnableAutoConfiguration
 public class HelloPOJO {
 
-    @Value("${hello.signature}")
+    @Value("${hello.signature:default}")
     String signature;
 
     public String getSignature() {

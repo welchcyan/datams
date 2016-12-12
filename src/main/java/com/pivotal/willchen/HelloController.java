@@ -3,6 +3,7 @@ package com.pivotal.willchen;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by chenw13 on 7/28/16.
  */
-@EnableDiscoveryClient
 @RestController
 public class HelloController {
 

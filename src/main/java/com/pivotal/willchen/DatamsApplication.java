@@ -9,6 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan
 @EnableDiscoveryClient
+@EnableAutoConfiguration
 public class DatamsApplication {
 
 	public static void main(String[] args) {
